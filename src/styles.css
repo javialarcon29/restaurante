@@ -1,1 +1,130 @@
-/* You can add global styles to this file, and also import other style files */
+/* Estilo general */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: gray;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease-in-out;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .header-container:hover {
+    background-color: #fcfcfc;
+  }
+  
+  /* Logo */
+  .logo img {
+    width: 120px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .logo img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Navbar */
+  .navbar .nav-list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+  }
+  
+  .navbar .nav-item {
+    position: relative;
+  }
+  
+  .navbar .nav-item a {
+    font-weight: 600;
+    font-family: 'Playfair Display', serif; /* Cambiamos a la nueva tipografía */
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navbar .nav-item a:hover {
+    color: #ff6347; /* Color llamativo en hover (tomate) */
+  }
+  
+  /* Estilo de subrayado animado en el hover */
+  .navbar .nav-item a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #ff6347;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .navbar .nav-item a:hover::after {
+    width: 100%;
+  }
+  
+  /* Media queries para hacer el diseño responsive */
+  @media (max-width: 1024px) {
+    .header-container {
+      padding: 15px 30px;
+    }
+  
+    .navbar .nav-list {
+      gap: 20px;
+    }
+  
+    .logo img {
+      width: 100px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header-container {
+      flex-direction: column;
+      padding: 10px 20px;
+    }
+  
+    .navbar .nav-list {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  
+    .navbar .nav-item a {
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    .logo img {
+      width: 90px;
+    }
+  }
+  
+  /* Efecto sticky para el header */
+  .header-container.sticky {
+    background-color: #ffffff;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  

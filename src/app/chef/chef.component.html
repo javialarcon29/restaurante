@@ -1,0 +1,139 @@
+  <!--chef.component.html-->
+<div class="chef-presentation">
+
+  <!-- Fondo de video -->
+  <video autoplay muted loop id="background-video">
+    <source src="https://videos.pexels.com/video-files/5780424/5780424-uhd_2560_1440_24fps.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
+  </video>
+
+  <!-- Contenido superpuesto -->
+  <div class="content-overlay">
+    
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>Chef Experto en Carnes Premium</h1>
+        <p>
+          Perfeccionando el arte de los cortes y sabores con técnicas avanzadas de cocción y una pasión insaciable por la excelencia culinaria.
+        </p>
+        <a href="menu" class="btn">Descubre el menu</a>
+      </div>
+    </section>
+
+    <!-- Sobre el Chef -->
+    <section id="about-chef" class="about-chef">
+      <div class="profile">
+        <img
+          src="https://images.pexels.com/photos/4253302/pexels-photo-4253302.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="Foto del Chef Especialista en Carnes"
+          class="profile-img"
+        />
+        <div class="bio">
+          <h2>FRANCISCO ALARCON</h2>
+          <p>
+            El Chef Francisco Alarcón es un maestro en el arte de preparar carne. Con más de 15 años en el mundo culinario, ha logrado mezclar tradición y modernidad en cada plato, trabajando con los mejores productos cárnicos y técnicas de precisión.
+          </p>
+          <p>
+            Su trayectoria incluye colaboraciones en restaurantes galardonados con estrellas Michelin, donde ha perfeccionado el equilibrio entre sabor, textura y presentación.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+   <!-- Especialidades -->
+<section class="skills">
+  <h2>Especialidades del Chef</h2>
+  <ul>
+    <li>
+      <i class="fas fa-cutlery"></i> 
+      Selección y preparación de carnes premium
+    </li>
+    <li>
+      <i class="fas fa-fire"></i> 
+      Asado a la parrilla de alta precisión
+    </li>
+    <li>
+      <i class="fas fa-water"></i> 
+      Cocción al vacío (Sous-vide) y técnicas avanzadas
+    </li>
+    <li>
+      <i class="fas fa-paint-brush"></i> 
+      Salsas y marinados gourmet
+    </li>
+    <li>
+      <i class="fas fa-glass-cheers"></i> 
+      Maridajes exclusivos con vinos y destilados
+    </li>
+  </ul>
+</section>
+
+<!-- Video de Presentación -->
+<section class="video-presentation">
+  <h2>El Arte en Acción</h2>
+  <div class="video-container">
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/KekLnViQSuc"
+      title="Video de presentación del Chef"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </div>
+</section>
+
+
+
+
+<!-- Logros y Certificaciones -->
+<section class="achievements">
+  <h2>Logros y Certificaciones</h2>
+  <ul>
+    <li>
+      <i class="fas fa-award"></i> 
+      Diploma en técnicas de asado de Le Cordon Bleu
+    </li>
+    <li>
+      <i class="fas fa-medal"></i> 
+      Premio "Mejor Chef de Carnes" en el Festival Gastronómico Internacional 2020
+    </li>
+    <li>
+      <i class="fas fa-certificate"></i> 
+      Embajador oficial de la carne Wagyu en Europa
+    </li>
+    <li>
+      <i class="fas fa-star"></i> 
+      Dos estrellas Michelin en su restaurante propio
+    </li>
+  </ul>
+</section>
+
+
+   <!-- Testimonios con Imagen -->
+<section class="testimonials">
+  <h2>Testimonios</h2>
+
+  <div class="testimonial">
+    <img src="data:image/jpeg;base64,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" alt="Cliente satisfecho" class="testimonial-img">
+    <div class="testimonial-text">
+      <p>“Un verdadero maestro. La forma en que transforma los cortes en pura magia culinaria es impresionante.”</p>
+      <span>- David Muñoz</span>
+    </div>
+  </div>
+
+  <div class="testimonial">
+    <img src="data:image/jpeg;base64,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" alt="Crítico gastronómico" class="testimonial-img">
+    <div class="testimonial-text">
+      <p>“He probado carnes en los mejores restaurantes del mundo, pero la técnica del Chef Francisco Alarcón es única.”</p>
+      <span>- Chikote</span>
+    </div>
+  </div>
+</section>
+
+
+  </div>
+</div>
+

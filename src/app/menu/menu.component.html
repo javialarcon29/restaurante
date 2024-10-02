@@ -1,0 +1,81 @@
+<div class="menu-container">
+  <h1>Menú Profesional de Carnes y Vinos</h1>
+
+  <section class="menu-section">
+    <h2>Entrantes</h2>
+    <div class="menu-grid">
+      <div class="menu-item" *ngFor="let entrante of entrantes">
+        <img [src]="entrante.imagen" alt="{{ entrante.nombre }}" class="menu-image">
+        <div class="menu-info">
+          <h3>{{ entrante.nombre }}</h3>
+          <p>{{ entrante.descripcion }}</p>
+          <span>{{ entrante.precio | number:'1.2-2' }}€</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section class="menu-section">
+    <h2>Carnes</h2>
+    <div class="menu-grid">
+      <div class="menu-item" *ngFor="let carne of carnes">
+        <img [src]="carne.imagen" alt="{{ carne.nombre }}" class="menu-image">
+        <div class="menu-info">
+          <h3>{{ carne.nombre }}</h3>
+          <p>{{ carne.descripcion }}</p>
+          <span>{{ carne.precio | number:'1.2-2' }}€</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section class="menu-section">
+    <h2>Vinos</h2>
+    <div class="menu-grid">
+      <div class="menu-item" *ngFor="let vino of vinos">
+        <img [src]="vino.imagen" alt="{{ vino.nombre }}" class="menu-image">
+        <div class="menu-info">
+          <h3>{{ vino.nombre }}</h3>
+          <p>{{ vino.descripcion }}</p>
+          <span>{{ vino.precio | number:'1.2-2' }}€</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section class="menu-section">
+    <h2>Refrescos</h2>
+    <div class="menu-grid">
+      <div class="menu-item" *ngFor="let refresco of refrescos">
+        <img [src]="refresco.imagen" alt="{{ refresco.nombre }}" class="menu-image">
+        <div class="menu-info">
+          <h3>{{ refresco.nombre }}</h3>
+          <p>{{ refresco.descripcion }}</p>
+          <span>{{ refresco.precio | number:'1.2-2' }}€</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section class="menu-section">
+    <h2>Guarniciones</h2>
+    <div class="menu-grid">
+      <div class="menu-item" *ngFor="let guarnicion of guarniciones">
+        <img [src]="guarnicion.imagen" alt="{{ guarnicion.nombre }}" class="menu-image">
+        <div class="menu-info">
+          <h3>{{ guarnicion.nombre }}</h3>
+          <p>{{ guarnicion.descripcion }}</p>
+          <span>{{ guarnicion.precio | number:'1.2-2' }}€</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
