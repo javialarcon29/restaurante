@@ -48,9 +48,8 @@ export class MenuComponent {
 
   // Refrescos
   refrescos: Item[] = [
-    { nombre: 'Coca-Cola,Fanta', descripcion: 'Refresco clásico con burbujas.', precio: 3, imagen: 'https://images.pexels.com/photos/17559580/pexels-photo-17559580/free-photo-of-botellas-vaso-cristal-vidrio.jpeg?auto=compress&cs=tinysrgb&w=600' },
-    { nombre: 'Copa Vino de Ronda', descripcion: 'Refresco de naranja con gas.', precio: 3, imagen: 'https://media.istockphoto.com/id/615269202/es/foto/verter-vino-en-copa.jpg?b=1&s=612x612&w=0&k=20&c=RnTakwYnFTxnxpZhgCJKxr1sXIvWEzVZJwrZtGZA8P0=' },
-    { nombre: 'Sprite', descripcion: 'Refresco de lima-limón.', precio: 3, imagen: 'https://images.pexels.com/photos/15811838/pexels-photo-15811838/free-photo-of-coca-cola-bebidas-duende-bebidas-sin-alcohol.jpeg?auto=compress&cs=tinysrgb&w=600' },
+   
+    { nombre: 'Refrescos', descripcion: 'Refresco de lima-limón.', precio: 3, imagen: 'https://images.pexels.com/photos/15811838/pexels-photo-15811838/free-photo-of-coca-cola-bebidas-duende-bebidas-sin-alcohol.jpeg?auto=compress&cs=tinysrgb&w=600' },
     { nombre: 'Agua Solan de Cabras', descripcion: 'Agua mineral con o sin gas.', precio: 2, imagen: 'https://images.pexels.com/photos/10140534/pexels-photo-10140534.jpeg?auto=compress&cs=tinysrgb&w=600'}
   ];
 

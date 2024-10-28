@@ -22,7 +22,7 @@
   padding: 100px 20px;
   color: white;
   text-align: center;
-  min-height: 50vh;
+  min-height: 100vh; /* Ocupa toda la pantalla */
   display: flex;
   justify-content: center; /* Centra el contenido horizontalmente */
   align-items: center; /* Centra el contenido verticalmente */
